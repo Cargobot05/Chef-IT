@@ -1,0 +1,68 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4em;
+  display: flex;
+  gap: 1em;
+  padding: 0 1.5em;
+  border-radius: 0 0 2em 2em;
+  background-color: #08246c;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0.5em 1.5em rgba(0, 0, 0, 0.267);
+}
+  
+.menu {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-items: center;
+}
+  
+.accounts {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-items: center;
+}
+
+button {
+  border-radius: 1em;
+  border: 0.15em solid #314986;
+  padding: 0.8em;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-weight: 800;
+  font-family: inherit;
+  background-color: #08246c;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #ffffff;
+  border-width: 0.15em;
+}
+
+button.img-button {
+  display: flex;
+  padding: 0.5em;
+  border-radius: 1em;
+  background-image: url("/src/assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 8em;
+  height: 3em;
+}
+
+button.no-border {
+  border-color: transparent;
+}
+button.no-border:hover {
+  border-color: #314986;
+  border-width: 0.15em;
+}
